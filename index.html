@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <style>
         body{
-            background-color:darkslateblue;
+            
+            background:
+                linear-gradient(
+                rgba(39,62,84,0.9),rgba(39,62,84,0.9)
+                ),
+                url("https://asperbrothers.com/wp-content/uploads/2019/09/750_5910-kopia-853x470.jpg") ;
         }
         #title{
             color: white;
@@ -27,12 +32,50 @@
             font-size: 18px;
             font-style: italic;
             }
-        #survey-form{}
-        #name{}
-        #email{}
+        #survey-form{
+            background-color: rgba(0, 128, 131, 0.6);
+            width: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+            padding: 30px;
+        }
+        #name{
+            width: 400px;
+            font-family: poppins;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-color: white;
+        }
+        #email{
+            width: 400px;
+            font-family: poppins;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-color: white;
+        }
         #number{}
-        #name-label{}
-        #email-label{}
+        #name-label{
+            color: white;
+            font-family: poppins;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        #email-label{
+            color: white;
+            font-family: poppins;
+            font-size: 18px;
+            font-weight: 400;
+        }
         #number-label{}
         #dropdown{}
         #submit{}
@@ -41,6 +84,11 @@
 <body>
     <h1 id="title">freeCodeCamp test Survey form</h1>
     <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <form id="survey-form"></form>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Insert your name"><br>
+        <label id="email-label" for="email">Email</label><br>
+        <input type="text" id="email" name="email" placeholder="Insert your email"><br>
+    </form>
 </body>
 </html>
