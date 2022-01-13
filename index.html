@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>CodeCamp Suvey Project</title>
     <meta charset="UTF-8">
     <style>
         body{
@@ -144,6 +145,22 @@
             margin-bottom: 5px;
             margin-top: 20px;
         }
+        .checks{
+            font-family: poppins;
+            font-size: 18px;
+            color: white;
+            font-weight: 100;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        textarea{
+            width: 400px;
+            height: 100px;
+            border-radius: 5px;
+            font-family: poppins;
+            font-size: 18px;
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -155,7 +172,7 @@
         <label id="email-label" for="email">Email</label><br>
         <input type="email" id="email" name="email" required placeholder="Insert your email"><br>
         <label id="number-label" for="number">Age</label><br>
-        <input type="number" id="number" name="number" min="1" max="150" placeholder="Insert your age">
+        <input type="number" id="number" name="number" required min="1" max="150" placeholder="Insert your age">
         <p class="question">Lorem ipsum dolor sit amet?</p>
         <select id="dropdown" required>
             <option value="" disabled selected>Select your option</option>
@@ -168,7 +185,11 @@
         <label for="b2" class="radioB"><input id="b2" type="radio" name="radio" class="radioConifg">sed do eiusmod tempor incididunt</label>
         <label for="b3" class="radioB"><input id="b3" type="radio" name="radio" class="radioConifg">ut labore et dolore magna aliqua</label>
         <p class="question">Lorem ipsum dolor sit amet?</p>
-
+        <label class="checks"><input type="checkbox" value="v1" checked>ducimus qui blanditiis</label>
+        <label class="checks"><input type="checkbox" value="v2">perferendis doloribus</label>
+        <label class="checks"><input type="checkbox" value="v3">odio dignissimos ducimus qui blanditiis</label>
+        <p class="question">Any comments ou suggestions?</p>
+        <textarea placeholder="Enter your comments here..."></textarea>
         <button id="submit" type="submit">Submit</button>
     </form>
 </body>
